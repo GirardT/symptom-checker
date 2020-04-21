@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Girard Tabañag">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Symptom Checker</h1>
+            <p id="description">These questions are about the patient – that may be you, or someone else.</p>
+        </header>
+        <section>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Patient's name</label>
+                    <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter patient's name"
+                    required
+                    />
+                    <label id="email-label" for="email">Patient's email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter patient's email"
+                    required
+                    />
+                    <label id="number-label" for="email">Patient's age</label>
+                    <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    min="0"
+                    max="150"
+                    class="form-control"
+                    placeholder="Enter patient's age"
+                    required
+                    />
+
+                </div>
+            </form>
+        </section>
+        <footer>
+            <a href="https://github.com/GirardT/symptom-checker" target=_blank>View Source Code</a><br />
+            Girard Andrew Tabañag
+        </footer>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
