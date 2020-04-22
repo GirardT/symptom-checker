@@ -20,35 +20,89 @@
             <form id="survey-form">
                 <div class="form-group">
                     <label id="name-label" for="name">Patient's name</label>
-                    <input 
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="form-control"
-                    placeholder="Enter patient's name"
-                    required
-                    />
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter patient's name"
+                        required />
+                </div>
+                <div class="form-group">
                     <label id="email-label" for="email">Patient's email</label>
-                    <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="Enter patient's email"
-                    required
-                    />
-                    <label id="number-label" for="email">Patient's age</label>
-                    <input
-                    type="number"
-                    name="number"
-                    id="number"
-                    min="0"
-                    max="150"
-                    class="form-control"
-                    placeholder="Enter patient's age"
-                    required
-                    />
-
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter patient's email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="email">Patient's age (optional)</label>
+                    <input type="number" name="number" id="number" min="0" max="150" class="form-control"
+                        placeholder="Enter patient's age" />
+                </div>
+                <div class="form-group">
+                    <select id="dropdown" name="yearsmonths" class="form-control">
+                        <option disabled selected value>Select if applicable</option>
+                        <option value="years">Years</option>
+                        <option value="months">Months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Do any of the following apply to you or the patient? (check all that apply)</p>
+                    <label>
+                        <input name="symptom" value="breathless" type="checkbox" class="input-checkbox" />
+                        So breathless you're unable to speak in sentences.
+                    </label>
+                    <label>
+                        <input name="symptom" value="breathless" type="checkbox" class="input-checkbox" />
+                        Unconscious or drowsy.
+                    </label>
+                    <label>
+                        <input name="symptom" value="breathless" type="checkbox" class="input-checkbox" />
+                        Skin turning blue or pale.
+                    </label>
+                    <label>
+                        <input name="symptom" value="breathless" type="checkbox" class="input-checkbox" />
+                        Pale, unusually cold, clammy ? skin associated with shallow, rapid breathing or confusion.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Which state or territory are you in?</p>
+                    <label>
+                        <input name="state" value="nsw" type="radio" class="input-radio" />
+                        NSW
+                    </label>
+                    <label>
+                        <input name="state" value="wa" type="radio" class="input-radio" />
+                        WA
+                    </label>
+                    <label>
+                        <input name="state" value="vic" type="radio" class="input-radio" />
+                        VIC
+                    </label>
+                    <label>
+                        <input name="state" value="sa" type="radio" class="input-radio" />
+                        SA
+                    </label>
+                    <label>
+                        <input name="state" value="nt" type="radio" class="input-radio" />
+                        NT
+                    </label>
+                    <label>
+                        <input name="state" value="act" type="radio" class="input-radio" />
+                        ACT
+                    </label>
+                    <label>
+                        <input name="state" value="tas" type="radio" class="input-radio" />
+                        TAS
+                    </label>
+                    <label>
+                        <input name="state" value="qld" type="radio" class="input-radio" />
+                        QLD
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
                 </div>
             </form>
         </section>
